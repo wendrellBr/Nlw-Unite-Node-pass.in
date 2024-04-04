@@ -1,0 +1,32 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+post http://localhost:3333/events/22015328-dba5-4464-93f7-d39d1589e4bf/attendees
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe1@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/22015328-dba5-4464-93f7-d39d1589e4bf
+
+###
+
+GET http://localhost:3333/attendees/4/badge
+
+###
+GET http://localhost:3333/attendees/3/check-in
+
+###
+GET http://localhost:3333/events/22015328-dba5-4464-93f7-d39d1589e4bf/attendees
